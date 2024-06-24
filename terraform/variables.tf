@@ -1,10 +1,10 @@
 variable "private_key_path" {
-  description = ""
+  description = "Path to the private key for SSH access"
   type        = string
 }
 
 variable "public_key_path" {
-  description = ""
+  description = "Path to the public key for SSH access"
   type        = string
 }
 
