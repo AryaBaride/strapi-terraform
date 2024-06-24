@@ -1,9 +1,5 @@
-variable "private_key_path" {
-  description = "~/.ssh/id_ed25519"
-  type        = string
-}
-
-variable "public_key_path" {
-  description = "~/.ssh/id_ed25519.pub"
-  type        = string
+provider "aws" {
+  region     = var.aws_region
+  access_key = var.aws_access_key_id
+  secret_key = var.aws_secret_access_key
 }
