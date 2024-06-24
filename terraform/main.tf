@@ -20,6 +20,7 @@ resource "aws_instance" "strapi_instance" {
       "sudo apt-get install -y docker-compose",
       "git clone https://github.com/AryaBaride/strapi-terraform.git /home/ubuntu/strapi-app",
       "cd /home/ubuntu/strapi-app",
+      "export HOST=0.0.0.0",
       "yarn install",
       "yarn build",
       "yarn start &",
